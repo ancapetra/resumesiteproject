@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  .resume {
+    font-size: 16px;
+    line-height: 1.2em;
+    text-align: center;
+    padding-left: 1em;
+  }
+  div.main {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .sidebar {
+    order: 0;
+    width: 50%;
+  }
+  .picture, .intro {
+    width: 100%;
+    text-align: left;
+  }
+  .resume {
+    order: 1;
+    width: 50%;
+    padding-left: 0;
+    text-align: justify;
+  }
+  div.sidebar {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .picture {
+    order: 1;
+    width: 50%;
+  }
+  .resume, div.sidebar {
+    order: 3;
+    width: 20%;
+  }
+  .resume, div.main {
+    order: 4;
+    width: 50%;
+  }
+  .background {
+    width: 100%;
+  }
+  .resume p, .resume h4, .date-range {
+    padding-left: 2em;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  div.main {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.5em;
+  }
+}
